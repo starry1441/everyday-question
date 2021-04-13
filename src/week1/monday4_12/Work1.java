@@ -11,7 +11,47 @@ import java.util.Scanner;
  */
 public class Work1 {
 
+
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int[] arr = new int[n];
+        for(int i = 0; i < n; i++) {
+            arr[i] = in.nextInt();
+        }
+        //0:需要判断 1:递增 2:递减
+        int sta = 0;
+        int count = 0;
+        int j = 0;
+        while(j < n) {
+            j++;
+            while(j < n) {
+                if(arr[j] > arr[j-1]){
+                    sta = 1;
+                    break;
+                }else if(arr[j] < arr[j-1]) {
+                    sta = 2;
+                    break;
+                }else {
+                    j++;
+                }
+            }
+            for(j = j+1 ; j < n; j++) {
+                if(sta == 2 && arr[j] > arr[j-1]) {
+                    count++;
+                    break;
+                }
+                if(sta == 1 && arr[j] < arr[j-1]) {
+                    count++;
+                    break;
+                }
+            }
+        }
+        System.out.println(count+1);
+    }
+
+
+    public static void main2(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int[] arr = new int[n];

@@ -35,6 +35,7 @@ public class Work2 {
                 start = i+1;
             }
         }
+        reverse(c,start,c.length-1);
         System.out.println(new String(c));
     }
 
