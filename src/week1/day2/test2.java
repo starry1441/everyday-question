@@ -1,4 +1,4 @@
-package week1.monday4_12;
+package week1.day2;
 
 /**
  * Created with IntelliJ IDEA.

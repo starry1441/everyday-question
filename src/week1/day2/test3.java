@@ -1,6 +1,4 @@
-package week1.monday4_12;
-
-import netscape.security.UserTarget;
+package week1.day2;
 
 /**
  * Created with IntelliJ IDEA.
