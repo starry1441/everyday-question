@@ -1,6 +1,5 @@
 package week2.day3;
 
-import com.sun.deploy.util.SyncAccess;
 
 import java.util.Scanner;
 
