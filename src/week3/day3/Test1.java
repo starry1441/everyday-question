@@ -18,7 +18,7 @@ public class Test1 {
                 result = result + i * 2;
             case 3:
                 result = result + i * 3;
-                    break;
+                break;
             default:
                 result = result + 5;
         }
@@ -26,7 +26,7 @@ public class Test1 {
     }
 
     public static void main(String[] args) {
-        System.out.println(getValue(10));
+        System.out.println(getValue(1));
     }
 
 
